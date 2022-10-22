@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    padding:0;
+    text-align: center;
+
+}
+.container{
+    font-size: 3rem;
+    font-weight: bold;
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: blue;
+    padding-bottom: 10px;
+}
+nav{
+    background-color: yellow;
+    padding-bottom: 10px;
+}
+section{
+    background-color: gray;
+    height: 65vh;
+    display:flex;
+    flex-direction: column;
+    padding:17px;
+    gap: 8px;
+}
+footer{
+    background-color: brown;
+    padding-bottom: 10px;
+}
+article{
+    background-color: rgb(85, 85, 196);
+}
+#aside1{
+
+    background-color: green;
+}
+#aside2{
+
+    background-color: green;
+}
+#aside3{
+
+    background-color: green;
+}
+aside,article{
+    flex:auto;
+}
+
+/*****VERSION TABLETTES**************/
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .content
+         {display:flex;
+        flex-direction: column;
+         gap: 10px;  }
+    main{
+        display: flex;
+    }
+    nav{
+        flex-grow: 1;
+    }
+    section{
+        flex-grow: 2;
+    }
+    
+}
+
+/*****VERSION DESKTOP**************/
+
+@media screen and (min-width:901px) {
+
+    section{
+        flex-direction: row;
+        flex-grow: 2;
+        
+    } 
+     .content{display:flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    main{
+        display:flex;
+        flex-direction: row;
+    }
+    nav{
+      flex-grow: 1;
+    }
+    article,.content{
+        flex:auto;
+    }
+
+}
